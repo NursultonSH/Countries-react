@@ -1,0 +1,23 @@
+@import './scss/base.scss';
+@import './scss/root.scss';
+@import './media.scss';
+
+
+.dark-mode{
+    --txt-color:#FFFFFF;
+    --main-bg-color:#202C36;
+    --bg-color:#2B3844;
+    --placeholder-color:#FFFFFF;
+}
+
+.wrapper{
+    background-color: var(--main-bg-color);
+}
+
+.container{
+    max-width: 1320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}

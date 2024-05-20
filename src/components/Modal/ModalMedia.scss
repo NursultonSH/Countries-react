@@ -1,0 +1,116 @@
+@media only screen and (max-width:1150px) {
+    .modal{
+        .modal-item{
+            .main-item{
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .modal-infos{
+                    width: max-content;
+                    padding-right: 50px;
+                    .about-country{
+                        flex-direction: column;
+                        margin-bottom: 30px;
+                    }
+                    .border-countries{
+                        .borders{
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:980px) {
+    .modal{
+        .modal-item{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .main-item{
+                flex-direction: column;
+                .modal-infos{
+                    max-width: 560px;
+                    width: 100%;
+                    .about-country{
+                        flex-direction: row;
+                    }
+                    .border-countries{
+                        .borders{
+                            flex-direction: row;
+                        }
+                    }
+                }
+            }
+            .cross{
+                top: 24px;
+                right: 24px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:650px) {
+    .modal{
+        padding: 0;
+        .modal-item{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            height: 100%;
+            border-radius: 0px;
+            .main-item{
+                .modal-infos{
+                    .about-country{
+                        flex-direction: column;
+                    }
+                    .border-countries{
+                        flex-direction: column;
+                        align-items: start;
+                        .borders{
+                            button{
+                                width: 80px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-height:550px) {
+    .modal{
+        .modal-item{
+            .main-item{
+                .modal-infos{
+                    .name{
+                        margin-bottom: 1px;
+                    }
+                    .about-country{
+                        .infos{
+                            p{
+                                line-height: 21px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:310px) {
+    .modal{
+        .modal-item{
+            .main-item{
+                .modal-infos{
+                    .border-countries{
+                        flex-direction: row;
+                        align-items: center;
+                        .borders{
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

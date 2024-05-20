@@ -1,0 +1,50 @@
+.dropDown{
+    position: relative;
+    max-width: 200px;
+    width: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    .dropDown-btn{  
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding: 18px 24px;
+        background-color: var(--bg-color);
+        color: var(--txt-color);
+        border-radius: 5px;
+        box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+        .dropDown-img{
+            transform: rotate(180deg);
+            transition: 0.5s;
+        }
+        .rotate-img{
+            transform: rotate(360deg);
+            transition: 0.5s;
+        }
+        svg{
+            path{
+                fill: var(--txt-color);
+            }
+        }
+    }
+    .dropDown-content{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        width: 100%;
+        top: 110%;
+        position: absolute;
+        background-color:var(--bg-color);
+        border-radius: 5px;
+        box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+        padding: 16px 24px;
+        color: var(--txt-color);
+        cursor: pointer;
+        p{
+            border-radius: 4px;
+        }
+    }
+}
+
+@import './DropDownMedia.scss'

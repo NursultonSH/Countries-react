@@ -1,0 +1,36 @@
+@media only screen and (max-width:700px) {
+    header{ 
+        padding: 23px 0;
+    }
+}  
+@media only screen and (max-width:430px) {
+    header{ 
+        padding: 32px 0;
+        margin-bottom: 24px;
+        .header-item{
+            h1{
+                font-size: 14px;
+            }
+            .mode{
+                column-gap: 10px;
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+}   
+@media only screen and (max-width:285px) {
+    header{ 
+        padding: 20px 0;
+        .header-item{
+            flex-direction: column;
+            row-gap: 10px;
+            justify-content: center;
+            h1{
+                text-align: center;
+            }
+        }
+    }
+}   

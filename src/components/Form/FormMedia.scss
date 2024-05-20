@@ -1,0 +1,36 @@
+@media only screen and (max-width:580px) {
+    form{ 
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        .input-box{
+            max-width: 300px;
+            padding: 16px 32px;
+            img{
+                width: 16px;
+                height: 16px;
+            }
+            input{
+                font-size: 12px;
+            }
+            input::placeholder{
+                font-size: 12px;
+            }
+        }
+    }
+}  
+@media only screen and (max-width:430px) {
+    form{ 
+        margin-bottom: 32px;
+    }
+} 
+
+@media only screen and (max-width:285px) {
+    form{
+        row-gap: 20px;
+        .input-box{
+            column-gap: 10px;
+            padding: 14px 15px;
+        }
+    }
+} 

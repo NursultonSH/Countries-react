@@ -1,12 +1,15 @@
+//scss
 import './DropDown.scss'
-import dropDown from '../../assets/icons/dropDown.svg'
+
+//React
 import { useContext, useState } from 'react'
+
+// Context
 import { Context } from '../../context'
 
 
 const DropDown = () => {
     const [isActive, setIsActive] = useState(false)
-    
     const {state, dispatch} = useContext(Context)
 
     const showDropDown = () => {
@@ -30,9 +33,7 @@ const DropDown = () => {
             </div>
             {isActive && (
                 <div className='dropDown-content'>
-                    {options.map((option) => (
-                        <p onClick={changeDropDownValue} className='dropDown-item'>{option}</p>
-                    ))}    
+                    {options.map(option => <p onClick={changeDropDownValue} className='dropDown-item'>{option}</p>)}    
                 </div>
             )}
         </div>

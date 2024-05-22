@@ -1,11 +1,14 @@
+// scss
 import './Modal.scss'
+// image
 import cross from '../../assets/icons/cross.svg'
+//React
 import { useContext } from 'react'
+// Context
 import { Context } from '../../context'
 
 const Modal = () => {
     const {state, dispatch} = useContext(Context)
-
     const {
         modalInfos:{name:{common}},
         modalInfos:{flags:{png}},
@@ -19,7 +22,6 @@ const Modal = () => {
         modalInfos:{languages},
         modalInfos:{borders}
     } = state
-
     
     const allNativeName = Object.values(nativeName).map(item => <span>{item.common},</span>)
     const takeCurrencies = Object.values(currencies)[0].name

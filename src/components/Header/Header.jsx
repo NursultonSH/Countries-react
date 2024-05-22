@@ -1,13 +1,19 @@
+// scss
 import './Header.scss'
+
+//images
 import lightMode from '../../assets/icons/lightMode.svg'
 import darkMode from '../../assets/icons/darkMode.svg'
-import { useContext } from 'react'
+
+//Context
 import { Context } from '../../context'
 
+//React
+import { useContext } from 'react'
+
 const Header = () => {
-
   const {state, dispatch} = useContext(Context)
-
+  
   const changeMode = () => {
     dispatch({type : "CHANGE_MODE"})
   }

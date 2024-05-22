@@ -1,6 +1,5 @@
-import { useContext } from 'react'
+// scss
 import './Country.scss'
-import { Context } from '../../context'
 
 const Country = ({
                   getModalInfos,

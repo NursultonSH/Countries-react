@@ -1,8 +1,16 @@
 import './Form.scss'
 import search from '../../assets/icons/search.svg'
 import DropDown from '../DropDown/DropDown'
+import { useContext } from 'react'
+import { Context } from '../../context'
 
-const Form = ({isSelected,setIsSelected,inputText,handleInputText}) => {
+const Form = () => {
+
+  const {state, dispatch} = useContext(Context)
+  const filterFlags = e => {
+    dispatch({type : "FILTER_FLAGS", payload : e.target.value})
+  }
+
   return (
     <form className='container'>
         <div className='input-box'>
@@ -12,11 +20,10 @@ const Form = ({isSelected,setIsSelected,inputText,handleInputText}) => {
                   name="" 
                   id="" 
                   placeholder='Search for a country…' 
-                  onChange={handleInputText}
-                  value={inputText}
+                  onChange={filterFlags}
             />
         </div>
-        <DropDown isSelected={isSelected} setIsSelected={setIsSelected} /> 
+        <DropDown /> 
     </form>
   )
 }

@@ -1,16 +1,18 @@
+import { useContext } from 'react'
 import './Country.scss'
+import { Context } from '../../context'
 
 const Country = ({
+                  getModalInfos,
                   country:{name : {common : name}},
                   country:{region},
                   country:{capital},
                   country:{population},
                   country:{flags:{png,alt}},
-                  takeModalInfos
 }) => {
 
   return (
-    <div onClick={takeModalInfos} className='country'>
+    <div onClick={getModalInfos} className='country'>
       <img src={png} alt={alt} />
       <div className='country-content'>
         <p className='name'>{name}</p>
